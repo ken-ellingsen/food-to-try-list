@@ -10,7 +10,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>New Foods to Try</h1>
-      <NewFoodInput addFoodItem={addFoodItem} />
+      <NewFoodInput addFoodItem={addFoodItem} setFoodsToTry={setFoodsToTry} />
       <ul className="food-list">
         {foodsToTry.map((food, index) =>(
             <li key={index}>{food}</li>
