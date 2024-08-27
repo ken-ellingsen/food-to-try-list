@@ -7,8 +7,10 @@ const NewFoodInput = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    props.addFoodItem(food);
-    setFood("");
+    if (food !== "" && food !== " "){
+      props.addFoodItem(food);
+      setFood("");
+    }
   };
 
   const clearList = () => props.setFoodsToTry([]);
