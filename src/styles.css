@@ -71,3 +71,11 @@ span.delete:hover {
   font-size: inherit;
   cursor: pointer;
 }
+
+.food-list li.gray {
+  background-color: rgb(245, 241, 241);
+}
+
+.food-list span.strike {
+  text-decoration: line-through;
+}
